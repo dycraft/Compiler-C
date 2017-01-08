@@ -45,3 +45,7 @@ doc/
 # Product
 *.py
 *.ll
+C_lexical.cpp
+C_syntax.cpp
+C_syntax.hpp
+compiler
