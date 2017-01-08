@@ -41,3 +41,7 @@ doc/
 # Compiler
 *.lex
 *.yacc
+
+# Product
+*.py
+*.ll
