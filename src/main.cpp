@@ -105,10 +105,15 @@ int main(int argc, char **argv) {
 		InitializeNativeTargetAsmParser();
 		linkExternalFunctions(context);
 		cout << "Generating LLVM code" << endl;
-		cout << "--------------------" << endl;
-		context.CodeGen(*root);
-		cout << endl;
-		cout << "--------------------" << endl;
+		if (v) {
+			cout << "--------------------" << endl;
+			context.CodeGen(*root);
+			cout << endl;
+			cout << "--------------------" << endl;
+		} else {
+			cout << "..." << endl;
+			context.CodeGen(*root);
+		}
 		cout << "Finished" << endl;
 		if (f) {
 			filename[len-1] = 'l';
