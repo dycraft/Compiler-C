@@ -27,3 +27,17 @@
 *.exe
 *.out
 *.app
+
+# MAC System
+.DS_Store
+
+# Report
+doc/
+*.pdf
+
+# Pyenv
+.python-version
+
+# Compiler
+*.lex
+*.yacc
