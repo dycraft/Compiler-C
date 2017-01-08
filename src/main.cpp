@@ -97,7 +97,7 @@ int main(int argc, char **argv) {
 			cout << "|     python c_code/<filename.py>     |" << endl;
 			cout << "+=====================================+" << endl;
 		}
-		cout << "finished" << endl;
+		cout << "Finished" << endl;
 	} else {
 		GenContext context;
 		InitializeNativeTarget();
