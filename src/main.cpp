@@ -91,10 +91,12 @@ int main(int argc, char **argv) {
 			cout << "------------" << endl;
 			cout << "Python code ends" << endl;
 		}
-		cout << "+=====================================+" << endl;
-		cout << "| To Run Python code, please using:   |" << endl;
-		cout << "|     python c_code/<filename.py>     |" << endl;
-		cout << "+=====================================+" << endl;
+		if (f) {
+			cout << "+=====================================+" << endl;
+			cout << "| To Run Python code, please using:   |" << endl;
+			cout << "|     python c_code/<filename.py>     |" << endl;
+			cout << "+=====================================+" << endl;
+		}
 		cout << "finished" << endl;
 	} else {
 		GenContext context;
